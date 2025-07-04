@@ -5,21 +5,21 @@ import { Github, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
 
 const footerLinks = {
   services: [
-    { name: "Web Development", href: "#services" },
-    { name: "Mobile Apps", href: "#services" },
-    { name: "Cloud Solutions", href: "#services" },
-    { name: "UI/UX Design", href: "#services" },
+    { name: "Artificial Intelligence", href: "#services" },
+    { name: "Cloud Services", href: "#services" },
+    { name: "Custom Development", href: "#services" },
+    { name: "IT Consulting", href: "#services" },
   ],
   company: [
     { name: "About Us", href: "#about" },
-    { name: "Our Team", href: "#about" },
+    { name: "AnalogAI Platform", href: "#analogai" },
     { name: "Careers", href: "#contact" },
     { name: "Contact", href: "#contact" },
   ],
   resources: [
-    { name: "Blog", href: "#" },
-    { name: "Case Studies", href: "#" },
+    { name: "AnalogAI.in", href: "https://analogai.in" },
     { name: "Documentation", href: "#" },
+    { name: "Case Studies", href: "#" },
     { name: "Support", href: "#contact" },
   ]
 };
@@ -39,26 +39,26 @@ export const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">DW</span>
+                <span className="text-white font-bold text-sm">AI</span>
               </div>
-              <span className="font-bold text-xl">Divine Web Tech</span>
+              <span className="font-bold text-xl">Analog Innovation</span>
             </div>
             <p className="text-slate-400 mb-6 leading-relaxed">
-              Transforming businesses through innovative digital solutions. 
-              We create exceptional web experiences that drive growth and success.
+              Founded in 2018, we harness the power of artificial intelligence through AnalogAI 
+              to transform user experiences and drive economic growth.
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-slate-400">
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">hello@divinewebtech.com</span>
+                <span className="text-sm">info@analogai.in</span>
               </div>
               <div className="flex items-center space-x-2 text-slate-400">
                 <Phone className="h-4 w-4" />
-                <span className="text-sm">+1 (555) 123-4567</span>
+                <span className="text-sm">+91 79841 36471</span>
               </div>
               <div className="flex items-center space-x-2 text-slate-400">
                 <MapPin className="h-4 w-4" />
-                <span className="text-sm">123 Tech Street, Digital City</span>
+                <span className="text-sm">Rajkot, Gujarat, India</span>
               </div>
             </div>
           </div>
@@ -106,6 +106,8 @@ export const Footer = () => {
                   <Link 
                     href={link.href} 
                     className="text-slate-400 hover:text-white transition-colors duration-200"
+                    target={link.href.startsWith('http') ? '_blank' : undefined}
+                    rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                   >
                     {link.name}
                   </Link>
@@ -119,7 +121,7 @@ export const Footer = () => {
         <div className="border-t border-slate-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-slate-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Divine Web Tech. All rights reserved.
+              &copy; {new Date().getFullYear()} Analog Innovation Pvt. Ltd. All rights reserved.
             </p>
             
             <div className="flex space-x-4">

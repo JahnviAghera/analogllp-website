@@ -5,19 +5,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const platforms = [
   {
-    title: "React & Next.js",
-    description: "Modern React frameworks for fast, scalable web applications",
-    logo: "⚛️"
+    title: "AnalogAI Platform",
+    description: "Our flagship AI platform for transforming user experiences",
+    logo: "🤖"
   },
   {
-    title: "Node.js",
-    description: "Server-side JavaScript for robust backend solutions",
-    logo: "🟢"
-  },
-  {
-    title: "Python & Django",
-    description: "Powerful backend development with Python frameworks",
-    logo: "🐍"
+    title: "TensorFlow & PyTorch",
+    description: "Advanced machine learning frameworks for AI development",
+    logo: "🧠"
   },
   {
     title: "AWS Cloud",
@@ -25,12 +20,17 @@ const platforms = [
     logo: "☁️"
   },
   {
-    title: "MongoDB",
-    description: "Flexible NoSQL database for modern applications",
-    logo: "🍃"
+    title: "Python & Node.js",
+    description: "Powerful backend development with modern frameworks",
+    logo: "🐍"
   },
   {
-    title: "Docker",
+    title: "React & Next.js",
+    description: "Modern frontend frameworks for responsive applications",
+    logo: "⚛️"
+  },
+  {
+    title: "Docker & Kubernetes",
     description: "Containerization for consistent deployment environments",
     logo: "🐳"
   },
@@ -38,7 +38,7 @@ const platforms = [
 
 export const PlatformsSection = () => {
   return (
-    <section id="products" className="py-20 bg-white">
+    <section id="analogai" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ export const PlatformsSection = () => {
             Technologies We <span className="gradient-text">Master</span>
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            We work with cutting-edge technologies to deliver exceptional results
+            We work with cutting-edge AI and cloud technologies to deliver exceptional results
           </p>
         </motion.div>
 

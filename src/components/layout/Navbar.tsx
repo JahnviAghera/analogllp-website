@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#services", label: "Services" },
-  { href: "#products", label: "Products" },
+  { href: "#analogai", label: "AnalogAI" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];
@@ -41,9 +41,9 @@ export const Navbar = () => {
         >
           <Link href="#home" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">DW</span>
+              <span className="text-white font-bold text-sm">AI</span>
             </div>
-            <span className="font-bold text-xl text-white">Divine Web Tech</span>
+            <span className="font-bold text-xl text-white">Analog Innovation</span>
           </Link>
         </motion.div>
 
@@ -81,9 +81,9 @@ export const Navbar = () => {
                   className="flex items-center gap-2 text-xl font-bold text-white mb-4"
                 >
                   <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">DW</span>
+                    <span className="text-white font-bold text-sm">AI</span>
                   </div>
-                  Divine Web Tech
+                  Analog Innovation
                 </Link>
                 {navLinks.map((link) => (
                   <Link

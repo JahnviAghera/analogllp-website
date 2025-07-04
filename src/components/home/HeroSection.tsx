@@ -34,19 +34,19 @@ export const HeroSection = () => {
             className="mb-6"
           >
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20 rounded-full text-purple-300 text-sm font-medium">
-              🚀 Engineering Digital Excellence
+              🤖 Transforming Experiences with AI
             </span>
           </motion.div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Transform Your
-            <span className="block gradient-text">Digital Vision</span>
-            Into Reality
+            Harness the Power of
+            <span className="block gradient-text">Artificial Intelligence</span>
+            with AnalogAI
           </h1>
 
           <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-            We craft cutting-edge web solutions that drive growth, enhance user experience, 
-            and propel your business into the digital future.
+            Since 2018, we've been dedicated to creating transparent, user-friendly AI solutions 
+            that drive economic growth and transform digital experiences.
           </p>
 
           <motion.div
@@ -59,7 +59,7 @@ export const HeroSection = () => {
               size="lg" 
               className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-full px-8 py-3 shadow-lg hover:shadow-purple-500/25 transition-all duration-300 group"
             >
-              Get Started Today
+              Explore AnalogAI
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             
@@ -80,16 +80,16 @@ export const HeroSection = () => {
             className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
           >
             <div className="text-white">
-              <div className="text-3xl font-bold gradient-text">500+</div>
-              <div className="text-slate-400 text-sm">Projects Completed</div>
+              <div className="text-3xl font-bold gradient-text">2018</div>
+              <div className="text-slate-400 text-sm">Founded in Gujarat</div>
             </div>
             <div className="text-white">
-              <div className="text-3xl font-bold gradient-text">98%</div>
-              <div className="text-slate-400 text-sm">Client Satisfaction</div>
+              <div className="text-3xl font-bold gradient-text">AI</div>
+              <div className="text-slate-400 text-sm">Powered Solutions</div>
             </div>
             <div className="text-white">
               <div className="text-3xl font-bold gradient-text">24/7</div>
-              <div className="text-slate-400 text-sm">Support Available</div>
+              <div className="text-slate-400 text-sm">Cloud Services</div>
             </div>
           </motion.div>
         </motion.div>

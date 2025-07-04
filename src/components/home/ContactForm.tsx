@@ -10,19 +10,19 @@ const contactInfo = [
   {
     icon: <Mail className="h-6 w-6" />,
     title: "Email Us",
-    details: "hello@divinewebtech.com",
+    details: "info@analogai.in",
     color: "text-blue-500"
   },
   {
     icon: <Phone className="h-6 w-6" />,
     title: "Call Us",
-    details: "+1 (555) 123-4567",
+    details: "+91 79841 36471",
     color: "text-green-500"
   },
   {
     icon: <MapPin className="h-6 w-6" />,
     title: "Visit Us",
-    details: "123 Tech Street, Digital City",
+    details: "Rajkot, Gujarat, India",
     color: "text-purple-500"
   }
 ];
@@ -39,10 +39,10 @@ export const ContactForm = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Let's Start Your <span className="gradient-text">Digital Journey</span>
+            Let's Start Your <span className="gradient-text">AI Journey</span>
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Ready to transform your business? Get in touch with us today for a free consultation
+            Ready to transform your business with AI? Get in touch with us today for a free consultation
           </p>
         </motion.div>
 
@@ -58,8 +58,8 @@ export const ContactForm = () => {
             <div>
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Get In Touch</h3>
               <p className="text-slate-600 mb-8 leading-relaxed">
-                We'd love to hear about your project and discuss how we can help bring your vision to life. 
-                Reach out to us through any of the following channels.
+                We'd love to hear about your project and discuss how AnalogAI can help transform 
+                your business with cutting-edge artificial intelligence solutions.
               </p>
             </div>
 
@@ -82,6 +82,12 @@ export const ContactForm = () => {
                   </div>
                 </motion.div>
               ))}
+            </div>
+
+            <div className="mt-8 p-4 bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20 rounded-lg">
+              <p className="text-sm text-slate-600">
+                <strong>Visit our main platform:</strong> <a href="https://analogai.in" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline">analogai.in</a>
+              </p>
             </div>
           </motion.div>
 
@@ -130,7 +136,7 @@ export const ContactForm = () => {
                     Phone Number
                   </label>
                   <Input 
-                    placeholder="+1 (555) 123-4567" 
+                    placeholder="+91 98765 43210" 
                     className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
                   />
                 </div>
@@ -140,7 +146,7 @@ export const ContactForm = () => {
                     Project Details
                   </label>
                   <Textarea 
-                    placeholder="Tell us about your project..." 
+                    placeholder="Tell us about your AI project requirements..." 
                     className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all min-h-[120px] resize-none"
                   />
                 </div>

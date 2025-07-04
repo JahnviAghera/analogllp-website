@@ -5,10 +5,10 @@ import { Button } from "../ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
 const achievements = [
-  "500+ Successful Projects Delivered",
-  "98% Client Satisfaction Rate",
-  "5+ Years of Industry Experience",
-  "24/7 Dedicated Support Team"
+  "Founded in 2018 in Gujarat",
+  "Specialized in AI & Cloud Services",
+  "Dedicated Team of Creative Thinkers",
+  "Transparent, User-Friendly Solutions"
 ];
 
 export const AboutSnippet = () => {
@@ -24,19 +24,20 @@ export const AboutSnippet = () => {
           >
             <div className="mb-6">
               <span className="inline-block px-4 py-2 bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20 rounded-full text-purple-600 text-sm font-medium">
-                About Divine Web Tech
+                About Analog Innovation
               </span>
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
               Transforming Ideas Into 
-              <span className="gradient-text"> Digital Reality</span>
+              <span className="gradient-text"> AI-Powered Reality</span>
             </h2>
             
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              We are a team of passionate developers, designers, and digital strategists 
-              dedicated to helping businesses thrive in the digital landscape. Our mission 
-              is to deliver innovative solutions that drive growth and create lasting impact.
+              Founded in 2018 in Gujarat under Analog Innovation Pvt. Ltd., we are a dedicated team 
+              of creative thinkers, marketers, and developers focused on harnessing the power of 
+              artificial intelligence. Our primary initiative, AnalogAI, aims to transform user 
+              experiences through advanced AI technologies.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -59,7 +60,7 @@ export const AboutSnippet = () => {
               size="lg" 
               className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-full px-8 py-3 shadow-lg hover:shadow-purple-500/25 transition-all duration-300 group"
             >
-              Learn More About Us
+              Visit AnalogAI.in
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </motion.div>
@@ -76,20 +77,20 @@ export const AboutSnippet = () => {
               <div className="relative bg-white p-8 rounded-2xl shadow-xl">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
-                    <div className="text-3xl font-bold gradient-text mb-2">500+</div>
-                    <div className="text-slate-600 text-sm">Projects</div>
+                    <div className="text-3xl font-bold gradient-text mb-2">2018</div>
+                    <div className="text-slate-600 text-sm">Founded</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold gradient-text mb-2">98%</div>
-                    <div className="text-slate-600 text-sm">Satisfaction</div>
+                    <div className="text-3xl font-bold gradient-text mb-2">AI</div>
+                    <div className="text-slate-600 text-sm">Focused</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold gradient-text mb-2">5+</div>
-                    <div className="text-slate-600 text-sm">Years</div>
+                    <div className="text-3xl font-bold gradient-text mb-2">Gujarat</div>
+                    <div className="text-slate-600 text-sm">Based</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold gradient-text mb-2">24/7</div>
-                    <div className="text-slate-600 text-sm">Support</div>
+                    <div className="text-3xl font-bold gradient-text mb-2">Cloud</div>
+                    <div className="text-slate-600 text-sm">Services</div>
                   </div>
                 </div>
               </div>

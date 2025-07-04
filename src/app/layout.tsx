@@ -11,9 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Divine Web Tech - Engineering Digital Excellence",
-  description: "Transform your business with cutting-edge web solutions. We specialize in custom software development, cloud solutions, and digital transformation.",
-  keywords: "web development, software development, cloud solutions, digital transformation, custom applications",
+  title: "Analog Innovation - Transforming Experiences with AI",
+  description: "Founded in 2018, Analog Innovation harnesses the power of artificial intelligence through AnalogAI to transform user experiences and drive economic growth with transparent, user-friendly solutions.",
+  keywords: "artificial intelligence, AI, cloud services, AnalogAI, digital transformation, Gujarat, Rajkot, IT consulting",
 };
 
 export default function RootLayout({

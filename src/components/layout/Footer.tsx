@@ -12,33 +12,44 @@ const socialLinks = [
 export const Footer = () => {
   return (
     <footer className="border-t border-border/40">
-      <div className="container mx-auto py-8">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} Analog Technologies. All rights
-              reserved.
+      <div className="container mx-auto py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 className="font-bold text-lg mb-4">Divine Web Tech</h3>
+            <p className="text-muted-foreground">
+              We are a team of dedicated professionals who are passionate about helping technology business owners to achieve their goals.
             </p>
           </div>
-          <div className="flex items-center space-x-4">
-            <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground">
-              Terms of Service
-            </Link>
+          <div>
+            <h3 className="font-bold text-lg mb-4">Services</h3>
+            <ul className="space-y-2">
+              <li><Link href="/services" className="text-muted-foreground hover:text-foreground">Software Development</Link></li>
+              <li><Link href="/services" className="text-muted-foreground hover:text-foreground">DevOps</Link></li>
+              <li><Link href="/services" className="text-muted-foreground hover:text-foreground">Cloud Development</Link></li>
+              <li><Link href="/services" className="text-muted-foreground hover:text-foreground">Ecommerce</Link></li>
+            </ul>
           </div>
-          <div className="flex items-center space-x-4 mt-4 md:mt-0">
-            {socialLinks.map((link, index) => (
-              <Link
-                key={index}
-                href={link.href}
-                className="text-muted-foreground hover:text-foreground"
-              >
-                {link.icon}
-              </Link>
-            ))}
+          <div>
+            <h3 className="font-bold text-lg mb-4">Platforms</h3>
+            <ul className="space-y-2">
+              <li><Link href="/platforms" className="text-muted-foreground hover:text-foreground">Odoo</Link></li>
+              <li><Link href="/platforms" className="text-muted-foreground hover:text-foreground">Dotnet</Link></li>
+              <li><Link href="/platforms" className="text-muted-foreground hover:text-foreground">Magento</Link></li>
+              <li><Link href="/platforms" className="text-muted-foreground hover:text-foreground">Salesforce</Link></li>
+            </ul>
           </div>
+          <div>
+            <h3 className="font-bold text-lg mb-4">Contact Us</h3>
+            <p className="text-muted-foreground">
+              Email: info@divinewebtech.com
+            </p>
+            <p className="text-muted-foreground">
+              Phone: +1 123 456 7890
+            </p>
+          </div>
+        </div>
+        <div className="mt-8 border-t border-border/40 pt-8 text-center text-muted-foreground">
+          <p>&copy; {new Date().getFullYear()} Divine Web Tech. All rights reserved.</p>
         </div>
       </div>
     </footer>

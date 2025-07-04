@@ -152,7 +152,7 @@ export const ContactForm = () => {
 
             <div className="p-4 bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20 rounded-xl">
               <p className="text-sm text-slate-600">
-                <strong>Visit our main platform:</strong> <a href="https://analogai.in" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline font-medium">analogai.in</a>
+                <strong>Visit our main platform:</strong> <a href="https://analogai.in" target=\"_blank" rel="noopener noreferrer\" className="text-purple-600 hover:underline font-medium">analogai.in</a>
               </p>
             </div>
           </motion.div>

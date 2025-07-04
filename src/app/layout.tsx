@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
-const poppins = Poppins({ 
+const inter = Inter({ 
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-sans" 
 });
 
 export const metadata: Metadata = {
-  title: "Analog Technologies",
-  description: "Engineering Digital Excellence",
+  title: "Divine Web Tech - Engineering Digital Excellence",
+  description: "Transform your business with cutting-edge web solutions. We specialize in custom software development, cloud solutions, and digital transformation.",
+  keywords: "web development, software development, cloud solutions, digital transformation, custom applications",
 };
 
 export default function RootLayout({
@@ -22,11 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          poppins.variable
+          inter.variable
         )}
       >
         <div className="relative flex min-h-dvh flex-col bg-background">

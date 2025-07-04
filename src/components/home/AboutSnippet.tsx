@@ -2,22 +2,100 @@
 
 import { motion } from "framer-motion";
 import { Button } from "../ui/button";
+import { ArrowRight, CheckCircle } from "lucide-react";
+
+const achievements = [
+  "500+ Successful Projects Delivered",
+  "98% Client Satisfaction Rate",
+  "5+ Years of Industry Experience",
+  "24/7 Dedicated Support Team"
+];
 
 export const AboutSnippet = () => {
   return (
-    <section className="py-20">
-      <div className="container mx-auto text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold">About Us</h2>
-          <p className="mt-4 text-lg text-neutral-400 max-w-3xl mx-auto">
-            Divine Web Tech is a team of dedicated professionals who are passionate about helping technology business owners to achieve their goals. We are committed to providing high-quality software development services that are tailored to the specific needs of our clients.
-          </p>
-          <Button className="mt-8">Learn More</Button>
-        </motion.div>
+    <section id="about" className="py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <div className="mb-6">
+              <span className="inline-block px-4 py-2 bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20 rounded-full text-purple-600 text-sm font-medium">
+                About Divine Web Tech
+              </span>
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+              Transforming Ideas Into 
+              <span className="gradient-text"> Digital Reality</span>
+            </h2>
+            
+            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+              We are a team of passionate developers, designers, and digital strategists 
+              dedicated to helping businesses thrive in the digital landscape. Our mission 
+              is to deliver innovative solutions that drive growth and create lasting impact.
+            </p>
+
+            <div className="space-y-4 mb-8">
+              {achievements.map((achievement, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex items-center space-x-3"
+                >
+                  <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
+                  <span className="text-slate-700">{achievement}</span>
+                </motion.div>
+              ))}
+            </div>
+
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-full px-8 py-3 shadow-lg hover:shadow-purple-500/25 transition-all duration-300 group"
+            >
+              Learn More About Us
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="relative"
+          >
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl transform rotate-6"></div>
+              <div className="relative bg-white p-8 rounded-2xl shadow-xl">
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold gradient-text mb-2">500+</div>
+                    <div className="text-slate-600 text-sm">Projects</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold gradient-text mb-2">98%</div>
+                    <div className="text-slate-600 text-sm">Satisfaction</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold gradient-text mb-2">5+</div>
+                    <div className="text-slate-600 text-sm">Years</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold gradient-text mb-2">24/7</div>
+                    <div className="text-slate-600 text-sm">Support</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useEffect, useRef, useState, useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import { handleContactSubmit, type ContactFormState } from '@/app/actions';
 
 import { Button } from '@/components/ui/button';
@@ -31,7 +31,7 @@ function SubmitButton() {
 
 export function ContactSection() {
   const initialState: ContactFormState = { success: false };
-  const [state, formAction] = useFormState(handleContactSubmit, initialState);
+  const [state, formAction] = useActionState(handleContactSubmit, initialState);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
   const { toast } = useToast();
